@@ -3,173 +3,202 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>BYD 공식딜러 이승혁 | 분당전시장</title>
-<meta name="description" content="BYD Auto bundang Showroom 이승혁 주임 상담 페이지">
+<title>BYD 이승혁</title>
+<meta name="description" content="BYD 분당전시장 이승혁 주임 공식 상담 홈페이지">
 <style>
-:root{
-  --bg:#08090d;--panel:#15171d;--panel2:#24262d;--line:#373b47;
-  --blue:#2447df;--blue2:#1538d3;--gold:#d9b873;--muted:#b4b8c6;
+:root {
+  --bg:#05060a; --panel:#11141c; --panel2:#1c202b; --line:#303647;
+  --blue:#2356ff; --blue2:#102fc7; --gold:#e6c578; --muted:#b5bdcf;
+  --white:#f8f9ff; --yellow:#ffe156; --green:#18c764;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
-  margin:0;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Noto Sans KR","Apple SD Gothic Neo",sans-serif;
-  background:radial-gradient(circle at 50% -10%,#1b2b61 0,#111522 32%,#08090d 70%);
+  margin:0;background:#05060a;color:#fff;
+  font-family:-apple-system,BlinkMacSystemFont,"Noto Sans KR","Apple SD Gothic Neo",sans-serif;
+  overflow-x:hidden;
 }
-.wrap{max-width:430px;margin:0 auto;padding:28px 18px 92px}
-.card{
-  background:linear-gradient(145deg,rgba(36,41,61,.92),rgba(16,18,25,.96));
-  border:1px solid rgba(111,120,160,.34);border-radius:28px;box-shadow:0 24px 60px rgba(0,0,0,.42);
+a{color:inherit}
+.hero{
+  min-height:100svh;position:relative;display:flex;align-items:flex-end;justify-content:center;
+  padding:28px 18px 96px;overflow:hidden;
+  background:radial-gradient(circle at 50% 10%,#1b2d6b 0,#090b12 46%,#05060a 100%);
 }
-.biz{padding:25px;position:relative;overflow:hidden;text-align:center}
-.biz:after{content:"";position:absolute;left:0;right:0;bottom:0;height:10px;background:linear-gradient(90deg,#172de0,#2567ff)}
-.watermark{position:absolute;right:22px;top:22px;font-size:34px;font-weight:950;color:rgba(255,255,255,.07)}
-.profile{width:116px;height:116px;border-radius:50%;object-fit:cover;border:4px solid #315cff;box-shadow:0 10px 30px rgba(49,92,255,.35);margin-bottom:16px;background:#fff}
-h1{margin:0;font-size:32px;letter-spacing:-1px}.role{color:var(--muted);font-size:18px;font-weight:800;margin-top:7px}
-.info{font-size:17px;color:#d8dbea;line-height:1.65;margin-top:15px;font-weight:700}.phone{font-size:29px;font-weight:950;margin-top:15px;letter-spacing:.5px}
-.btns{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0}.btn{
-  display:flex;align-items:center;justify-content:center;text-decoration:none;color:#fff;border-radius:18px;
-  min-height:68px;background:linear-gradient(#343740,#202229);border:1px solid #4c5265;font-size:18px;font-weight:950;
+.hero:before{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(to bottom,rgba(0,0,0,.15),rgba(0,0,0,.15) 40%,#05060a 95%);
+  z-index:1;
 }
-.btn.full{grid-column:1/3}.btn.blue{background:linear-gradient(180deg,#2e56ff,#1737ce);border-color:#506cff}.btn.yellow{background:linear-gradient(#fff46b,#ffdd00);color:#151515;border:0}
-.sec{border:1px solid var(--line);border-radius:28px;padding:20px;margin-top:24px;background:rgba(15,17,23,.9)}
-.label{letter-spacing:4px;color:var(--gold);font-size:15px;font-weight:950;margin-bottom:16px}
-.hero{overflow:hidden;border-radius:28px;margin-top:20px;border:1px solid var(--line)}
-.hero-img{height:292px;background:#f4f4f4;position:relative;display:flex;align-items:center;justify-content:center}.hero-img img{width:100%;height:100%;object-fit:cover}
-.hero-body{background:#17191f;padding:23px}.hero-body .brand{color:var(--gold);letter-spacing:4px;font-weight:950;margin-bottom:12px}.hero-body h2{font-size:34px;margin:0 0 9px}.hero-body p{color:#c5c9d5;font-size:17px;font-weight:800;margin:0}
-.dots{display:flex;gap:10px;justify-content:flex-end;margin-top:18px}.dot{width:10px;height:10px;border-radius:50%;background:#4a4d56}.dot.active{width:38px;border-radius:999px;background:#e8edf7}
-.lineup{display:grid;grid-template-columns:1fr 1fr;gap:14px}.lineup button{
-  border:1px solid #4a4d56;border-radius:20px;padding:22px 5px;background:linear-gradient(#3b3d43,#22242a);
-  color:#fff;font-size:20px;font-weight:950;cursor:pointer
+.hero-car{position:absolute;inset:0;z-index:0;display:flex;align-items:center;justify-content:center;opacity:.64;transform:scale(1.08)}
+.hero-car img{width:100%;height:100%;object-fit:cover;filter:saturate(1.05) contrast(1.08)}
+.hero-card{
+  position:relative;z-index:2;width:100%;max-width:470px;text-align:center;
+  background:linear-gradient(145deg,rgba(17,20,29,.78),rgba(5,6,10,.86));
+  border:1px solid rgba(255,255,255,.14);border-radius:34px;padding:26px 20px;
+  box-shadow:0 30px 80px rgba(0,0,0,.55);backdrop-filter:blur(14px);
 }
-.lineup button:first-child{grid-column:1/3;background:linear-gradient(180deg,#2e56ff,#1737ce);border-color:#506cff}
-.quick{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}.quick a{
-  text-decoration:none;color:#fff;text-align:center;border-radius:16px;background:#242731;border:1px solid #464a58;padding:14px 4px;font-weight:900
-}
-.notice{background:linear-gradient(180deg,#21356a,#13203f);border:1px solid #3152a6;border-radius:20px;padding:18px;margin-top:16px}
-.notice h3{margin:0 0 10px;font-size:20px}.notice p{margin:0;color:#d8dbea;font-weight:800;line-height:1.6}
-.chat{display:block;text-decoration:none;color:#111;background:linear-gradient(#fff56a,#ffd900);border-radius:24px;padding:24px;font-size:22px;font-weight:950}.chat span{font-size:15px}
-.blogbox{padding:21px;border-radius:22px;margin-bottom:14px;background:linear-gradient(#282b33,#1d2028);border:1px solid #424754}.blogbox h3{font-size:22px;margin:0 0 10px}.muted{color:var(--muted);font-weight:800;line-height:1.55}
-.table{width:100%;border-collapse:collapse;font-size:14px}.table th{background:#123765;padding:12px}.table td{border-bottom:1px solid #333846;padding:12px 6px;text-align:center}
-.save{background:linear-gradient(#1d56ff,#133bd8);border-radius:24px;text-align:center;padding:22px;margin-top:20px;font-size:18px;font-weight:950}.save b{display:block;font-size:33px;margin-top:4px}
-.calc-head{background:#176ca0;margin:-20px -20px 18px;padding:20px;border-radius:28px 28px 0 0;font-size:21px;font-weight:950}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{font-weight:950}
-.inp,select{width:100%;margin-top:8px;background:#2b2d33;border:1px solid #484b55;border-radius:16px;color:#fff;padding:15px;font-size:16px}
-.period{display:grid;grid-template-columns:1fr 1fr 1fr;gap:13px;margin:10px 0}.period button,.calcbtn{border:0;border-radius:18px;padding:18px;color:#fff;background:#4a4a4a;font-size:20px;font-weight:950}.period button.active,.calcbtn{background:#2447df}
-.result{background:#111a36;border-radius:18px;padding:18px;text-align:center;font-size:18px;font-weight:950;margin-top:16px}
-.contact{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.contact a{text-decoration:none;color:#fff;background:#27292f;border:1px solid #454852;border-radius:20px;padding:16px 4px;text-align:center;font-size:14px;font-weight:950}
-.loc{padding:18px;border-radius:20px;background:#24262d;border:1px solid #454955;font-size:18px;line-height:1.65}
-.mapbtns{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:14px}.mapbtns a{text-decoration:none;text-align:center;color:#fff;border-radius:18px;padding:18px 5px;font-weight:950}.t{background:#4756df}.k{background:#ffe14a;color:#111!important}.n{background:#18c763}
-.foot{text-align:center;color:#858b9b;letter-spacing:5px;font-weight:950;margin:32px 0}
-.fixed{position:fixed;left:0;right:0;bottom:0;background:rgba(8,9,13,.92);backdrop-filter:blur(12px);border-top:1px solid #303440;padding:10px;z-index:50}
-.fixed-in{max-width:430px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}.fixed-in a{text-decoration:none;color:#fff;text-align:center;border-radius:14px;padding:13px 4px;font-size:14px;font-weight:950;background:#242731}.fixed-in a:nth-child(2){background:#2447df}.fixed-in a:nth-child(3){background:#ffe14a;color:#111}
-@media(max-width:360px){.contact{grid-template-columns:1fr 1fr}.phone{font-size:25px}.hero-img{height:240px}}
+.logo{font-size:44px;font-weight:950;letter-spacing:8px;margin-bottom:8px}
+.kicker{display:inline-block;color:#111;background:linear-gradient(90deg,#fff56a,#e2bd55);border-radius:999px;padding:7px 14px;font-weight:950;font-size:13px;margin-bottom:16px}
+h1{font-size:34px;letter-spacing:-1px;margin:0} .sub{color:var(--muted);font-weight:800;margin-top:10px;line-height:1.5}
+.profile{width:92px;height:92px;border-radius:50%;object-fit:cover;border:3px solid #4070ff;margin:0 auto 16px;box-shadow:0 10px 34px rgba(35,86,255,.45);display:block;background:#fff}
+.cta{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.btn{text-decoration:none;border-radius:18px;padding:16px 10px;display:flex;align-items:center;justify-content:center;font-weight:950;background:#242936;border:1px solid #40485d;min-height:56px}
+.btn.primary{background:linear-gradient(180deg,#3262ff,#1538d5);border-color:#5e7dff}
+.btn.yellow{background:linear-gradient(180deg,#fff56a,#ffd500);color:#111;border:0}
+.btn.full{grid-column:1/3}
+.wrap{max-width:470px;margin:0 auto;padding:0 18px 96px}
+.section{border:1px solid var(--line);background:linear-gradient(145deg,rgba(20,23,32,.96),rgba(10,12,18,.96));border-radius:30px;margin-top:22px;padding:20px;box-shadow:0 20px 60px rgba(0,0,0,.28)}
+.label{letter-spacing:4px;color:var(--gold);font-size:13px;font-weight:950;margin-bottom:14px}
+.promo{background:linear-gradient(135deg,#1d3e9d,#101a3e);border-color:#315eff;position:relative;overflow:hidden}
+.promo:after{content:"EVENT";position:absolute;right:-16px;top:22px;transform:rotate(28deg);font-size:46px;font-weight:950;color:rgba(255,255,255,.05)}
+.promo h2,.section h2{font-size:25px;margin:0 0 12px;letter-spacing:-.5px}
+.promo ul{margin:12px 0 0;padding-left:20px;font-weight:850;line-height:1.85;color:#edf2ff}
+.cars{display:grid;gap:16px}
+.car{border:1px solid #343b4d;border-radius:24px;overflow:hidden;background:#171b24}
+.car img{width:100%;height:230px;object-fit:cover;background:#eee;display:block}
+.carbody{padding:17px} .carbody h3{margin:0 0 8px;font-size:25px} .carbody p{margin:0;color:#c4cad8;font-weight:750;line-height:1.55}
+.car-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:13px} .car-actions a{text-decoration:none;text-align:center;background:#252a36;border:1px solid #454d61;border-radius:14px;padding:12px 6px;font-weight:950}
+.benefits{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.benefit{background:#1b202b;border:1px solid #394154;border-radius:18px;padding:16px;text-align:center;font-weight:950;line-height:1.45}
+.benefit span{display:block;font-size:28px;margin-bottom:6px}
+.formbox{background:linear-gradient(145deg,#202637,#141824);border:1px solid #43506b;border-radius:24px;padding:18px;text-align:center}
+.formbox p{color:#c5ccdb;font-weight:800;line-height:1.6}
+.table{width:100%;border-collapse:collapse;font-size:13px;overflow:hidden;border-radius:16px} .table th{background:#123765;padding:11px} .table td{border-bottom:1px solid #303849;padding:11px 5px;text-align:center}
+.save{background:linear-gradient(#2356ff,#1435c9);border-radius:20px;text-align:center;padding:18px;margin-top:16px;font-size:17px;font-weight:950} .save b{display:block;font-size:27px;margin-top:4px}
+.calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px} label{font-weight:950} input,select{width:100%;margin-top:8px;background:#2b2f3a;border:1px solid #50586d;border-radius:15px;color:#fff;padding:14px;font-size:15px}
+.calcbtn{width:100%;border:0;border-radius:18px;margin-top:14px;padding:17px;color:#fff;background:#2356ff;font-size:18px;font-weight:950}
+.result{background:#101933;border-radius:18px;padding:17px;text-align:center;font-size:18px;font-weight:950;margin-top:14px}
+.mapbtns{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:12px} .mapbtns a{text-decoration:none;text-align:center;border-radius:16px;padding:16px 4px;font-weight:950} .t{background:#4756df}.k{background:#ffe14a;color:#111}.n{background:#18c763}
+.info{font-size:17px;line-height:1.7;color:#d8deee;font-weight:800;background:#1b202b;border:1px solid #3c465d;border-radius:20px;padding:16px}
+.footer{text-align:center;color:#858da3;letter-spacing:4px;font-weight:950;margin:28px 0}
+.fixed{position:fixed;left:0;right:0;bottom:0;background:rgba(5,6,10,.92);backdrop-filter:blur(14px);border-top:1px solid #303647;padding:10px;z-index:20}
+.fixed-in{max-width:470px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px} .fixed-in a{text-decoration:none;text-align:center;border-radius:14px;padding:13px 4px;font-size:14px;font-weight:950;background:#252a36} .fixed-in a:nth-child(2){background:#2356ff} .fixed-in a:nth-child(3){background:#ffe14a;color:#111}
+@media(max-width:360px){.calc-grid,.benefits{grid-template-columns:1fr} h1{font-size:29px} .car img{height:200px}}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <section class="card biz">
-    <div class="watermark">BYD</div>
-    <img class="profile" src="profile.jpg" alt="이승혁 주임 프로필">
-    <h1>이승혁 <span style="font-size:20px;color:var(--muted)">주임</span></h1>
-    <div class="role">BYD 공식 딜러 · Sales</div>
-    <div class="info">BYD Auto bundang Showroom<br>경기 성남시 분당구 대왕판교로 322 1층<br>jump8798@icloud.com</div>
-    <div class="phone">010 - 2335 - 8798</div>
-  </section>
-
-  <div class="btns">
-    <a class="btn" href="tel:01023358798">☎ 통화하기</a>
-    <a class="btn" href="lee-seunghyuk.vcf" download>👤 연락처 저장</a>
-    <a class="btn blue full" href="sms:01023358798">▣ 문자 상담하기</a>
-    <a class="btn yellow full" href="https://open.kakao.com/o/sdjLeNbi" target="_blank">💬 카카오톡 오픈채팅 바로가기</a>
+<section class="hero">
+  <div class="hero-car"><img src="images/sealion6.png" alt="BYD SEALION 6"></div>
+  <div class="hero-card">
+    <img class="profile" src="images/profile.jpg" alt="이승혁 주임">
+    <div class="logo">BYD</div>
+    <div class="kicker">BYD 공식딜러 · 분당전시장</div>
+    <h1>BYD 이승혁</h1>
+    <div class="sub">전국 상담 가능 · 실시간 재고 확인<br>시승 예약 · 견적 상담 · 출고 관리</div>
+    <div class="cta">
+      <a class="btn primary" href="https://docs.google.com/forms/d/1tkplfv9SKycjOyrhRzJjpQDBMR1903T1Z_dx6pgyno0/prefill" target="_blank">🚗 시승 예약</a>
+      <a class="btn" href="tel:01023358798">☎ 전화 상담</a>
+      <a class="btn yellow full" href="sms:01023358798?body=BYD 차량 견적 상담 문의드립니다.">💰 견적 문의</a>
+    </div>
   </div>
+</section>
 
-  <section class="hero">
-    <div class="hero-img"><img id="mainCarImg" src="sealion6.png" alt="BYD SEALION 6"></div>
-    <div class="hero-body">
-      <div class="brand">BYD</div>
-      <h2 id="mainCarName">SEALION 6</h2>
-      <p id="mainCarDesc">전기 주행과 장거리 효율을 함께 갖춘 PHEV SUV</p>
-      <div class="dots" id="dots"></div>
+<main class="wrap">
+  <section class="section promo">
+    <div class="label">SPECIAL EVENT</div>
+    <h2>SEALION 6 사전계약 이벤트</h2>
+    <p class="sub">7월 5일까지 계약 고객 대상</p>
+    <ul>
+      <li>20만원 충전카드 지원</li>
+      <li>V2L 케이블 지원</li>
+      <li>약 50만원 상당 혜택</li>
+      <li>색상 및 출고 순번 우선 확보</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <div class="label">TEST DRIVE</div>
+    <div class="formbox">
+      <h2>BYD 시승 예약</h2>
+      <p>성함, 연락처, 희망 시간대를 남겨주시면<br>이승혁 주임이 확인 후 빠르게 연락드립니다.</p>
+      <a class="btn primary full" href="https://docs.google.com/forms/d/1tkplfv9SKycjOyrhRzJjpQDBMR1903T1Z_dx6pgyno0/prefill" target="_blank">1분 시승 신청하기</a>
     </div>
   </section>
 
-  <section class="sec">
+  <section class="section">
     <div class="label">VEHICLE LINEUP</div>
-    <div class="lineup">
-      <button onclick="selectCar(0)">SEALION 6</button>
-      <button onclick="selectCar(1)">SEALION 7</button>
-      <button onclick="selectCar(2)">SEAL</button>
-      <button onclick="selectCar(3)">ATTO 3</button>
-      <button onclick="selectCar(4)">DOLPHIN</button>
-    </div>
-    <div class="notice">
-      <h3>🔥 SEALION 6 상담 포인트</h3>
-      <p>전기차의 조용함과 하이브리드의 장거리 효율을 함께 원하는 고객님께 추천드립니다.<br>재고·출고 일정·시승 예약까지 빠르게 안내드리겠습니다.</p>
-    </div>
-    <div class="quick">
-      <a href="sms:01023358798?body=SEALION 6 재고 문의드립니다.">씨라이언6 재고문의</a>
-      <a href="sms:01023358798?body=BYD 차량 견적 문의드립니다.">견적 문의</a>
+    <div class="cars">
+      <article class="car">
+        <img src="images/sealion6.png" alt="SEALION 6">
+        <div class="carbody"><h3>SEALION 6</h3><p>전기차의 정숙성과 하이브리드의 장거리 효율을 함께 경험할 수 있는 PHEV SUV.</p><div class="car-actions"><a href="https://docs.google.com/forms/d/1tkplfv9SKycjOyrhRzJjpQDBMR1903T1Z_dx6pgyno0/prefill" target="_blank">시승예약</a><a href="sms:01023358798?body=SEALION 6 견적 문의드립니다.">견적문의</a></div></div>
+      </article>
+      <article class="car">
+        <img src="images/sealion7.png" alt="SEALION 7">
+        <div class="carbody"><h3>SEALION 7</h3><p>패밀리 SUV 공간감과 전기차 퍼포먼스를 함께 원하는 고객님께 추천.</p><div class="car-actions"><a href="https://docs.google.com/forms/d/1tkplfv9SKycjOyrhRzJjpQDBMR1903T1Z_dx6pgyno0/prefill" target="_blank">시승예약</a><a href="sms:01023358798?body=SEALION 7 견적 문의드립니다.">견적문의</a></div></div>
+      </article>
+      <article class="car">
+        <img src="images/seal.png" alt="SEAL">
+        <div class="carbody"><h3>SEAL</h3><p>세련된 디자인과 강한 주행감을 갖춘 전기 세단.</p><div class="car-actions"><a href="https://docs.google.com/forms/d/1tkplfv9SKycjOyrhRzJjpQDBMR1903T1Z_dx6pgyno0/prefill" target="_blank">시승예약</a><a href="sms:01023358798?body=SEAL 견적 문의드립니다.">견적문의</a></div></div>
+      </article>
+      <article class="car">
+        <img src="images/atto3.png" alt="ATTO 3">
+        <div class="carbody"><h3>ATTO 3</h3><p>실속 있는 전기 SUV, 첫 전기차로 추천드리는 모델.</p><div class="car-actions"><a href="https://docs.google.com/forms/d/1tkplfv9SKycjOyrhRzJjpQDBMR1903T1Z_dx6pgyno0/prefill" target="_blank">시승예약</a><a href="sms:01023358798?body=ATTO 3 견적 문의드립니다.">견적문의</a></div></div>
+      </article>
+      <article class="car">
+        <img src="images/dolphin.png" alt="DOLPHIN">
+        <div class="carbody"><h3>DOLPHIN</h3><p>도심 주행에 부담 없는 컴팩트 전기차.</p><div class="car-actions"><a href="https://docs.google.com/forms/d/1tkplfv9SKycjOyrhRzJjpQDBMR1903T1Z_dx6pgyno0/prefill" target="_blank">시승예약</a><a href="sms:01023358798?body=DOLPHIN 견적 문의드립니다.">견적문의</a></div></div>
+      </article>
     </div>
   </section>
 
-  <section class="sec">
-    <div class="label">BLOG & CHAT</div>
-    <a href="https://blog.naver.com/jump01223" target="_blank" style="text-decoration:none;color:#fff">
-      <div class="blogbox">
-        <h3>이승혁 주임 BYD 상담 블로그</h3>
-        <div class="muted">차량 정보, 상담 안내, 출고 후기, 전시장 소식을 확인하실 수 있습니다.</div>
-      </div>
-    </a>
-    <a class="chat" href="https://open.kakao.com/o/sdjLeNbi" target="_blank">카카오톡 오픈채팅 바로가기<br><span>빠르게 상담 문의를 남기실 수 있습니다.</span></a>
+  <section class="section">
+    <div class="label">DELIVERY BENEFITS</div>
+    <h2>출고 고객 서비스</h2>
+    <div class="benefits">
+      <div class="benefit"><span>🪟</span>더스미스 VELA<br>썬팅 업그레이드</div>
+      <div class="benefit"><span>📹</span>마이스터 PX<br>블랙박스</div>
+      <div class="benefit"><span>🛣️</span>스미스패스<br>하이패스</div>
+      <div class="benefit"><span>🛡️</span>생활보호 PPF<br>서비스</div>
+    </div>
   </section>
 
-  <section class="sec">
-    <h2 style="margin-top:0">하이브리드와 EV 유지 관리비 비교 <span class="muted" style="float:right;font-size:13px">연 25,000km 기준</span></h2>
+  <section class="section">
+    <div class="label">COST SAVING</div>
+    <h2>하이브리드와 EV 유지비 비교</h2>
     <table class="table">
       <tr><th>비교항목</th><th>하이브리드</th><th>EV</th></tr>
       <tr><td>연간 자동차세</td><td>약 290,000원</td><td>약 130,000원</td></tr>
       <tr><td>연료/충전비</td><td>약 3,900,000원</td><td>약 1,500,000원</td></tr>
       <tr><td>소모품 교체비</td><td>약 450,000원</td><td>약 30,000원</td></tr>
       <tr><td>취득세 지원</td><td>해당없음</td><td>-1,400,000원</td></tr>
-      <tr><td>공영주차장</td><td>혜택없음</td><td>50% 할인</td></tr>
-      <tr><td>고속도로 통행료</td><td>혜택없음</td><td>30% 할인</td></tr>
     </table>
     <div class="save">5년 보유 시 총 절감 예상액<b>약 14,900,000원 + α</b></div>
-    <p class="muted" style="font-size:13px">상기 내용은 실제 판매차량과 차이가 있을 수 있습니다.</p>
   </section>
 
-  <section class="sec">
-    <div class="calc-head">전기차 전환 비용 계산기 ▲</div>
-    <p class="muted">현재 차량 정보를 입력하고 BYD 전기차 전환 시 예상 유지비 절감액을 확인하세요.</p>
-    <div class="grid">
-      <label>배기량 (cc)<input class="inp" id="cc" placeholder="예) 2000"></label>
-      <label>연비 (km/L)<input class="inp" id="eff" placeholder="예) 12"></label>
-      <label>연료 단가<input class="inp" id="fuel" placeholder="예) 1650"></label>
-      <label>연간 주행거리<input class="inp" id="km" placeholder="예) 20000"></label>
+  <section class="section">
+    <div class="label">CALCULATOR</div>
+    <h2>전기차 전환 비용 계산기</h2>
+    <div class="calc-grid">
+      <label>연비(km/L)<input id="eff" placeholder="예) 12"></label>
+      <label>연료 단가<input id="fuel" placeholder="예) 1650"></label>
+      <label>연간 주행거리<input id="km" placeholder="예) 20000"></label>
+      <label>비교 기간<select id="years"><option value="1">1년</option><option value="3">3년</option><option value="5" selected>5년</option></select></label>
     </div>
-    <label style="display:block;margin-top:16px">BYD 모델 선택
-      <select id="model"><option>BYD SEALION 6</option><option>BYD SEALION 7</option><option>BYD SEAL</option><option>BYD ATTO 3</option><option>BYD DOLPHIN</option></select>
-    </label>
-    <p style="font-weight:950;margin-top:16px">비교 기간</p>
-    <div class="period"><button onclick="setYear(1)">1년</button><button onclick="setYear(3)">3년</button><button class="active" onclick="setYear(5)">5년</button></div>
-    <button class="calcbtn" style="width:100%" onclick="calc()">유지비 절감액 확인</button>
+    <button class="calcbtn" onclick="calc()">유지비 절감액 확인</button>
     <div class="result" id="result">입력 후 버튼을 누르면 예상 절감액이 표시됩니다.</div>
   </section>
 
-  <section class="sec">
-    <div class="label">CONTACT US</div>
-    <div class="contact">
-      <a href="tel:01023358798">☎<br>전화상담</a>
-      <a href="sms:01023358798">💬<br>문자상담</a>
-      <a href="mailto:jump8798@icloud.com">✉️<br>이메일</a>
-      <a href="https://blog.naver.com/jump01223" target="_blank">🔗<br>블로그</a>
+  <section class="section">
+    <div class="label">CONTACT</div>
+    <div class="info">
+      <b>BYD 이승혁주임</b><br>
+      BYD Auto bundang Showroom<br>
+      경기 성남시 분당구 대왕판교로 322 1층<br>
+      010-2335-8798<br>
+      jump8798@icloud.com
+    </div>
+    <div class="cta">
+      <a class="btn" href="tel:01023358798">전화</a>
+      <a class="btn primary" href="https://docs.google.com/forms/d/1tkplfv9SKycjOyrhRzJjpQDBMR1903T1Z_dx6pgyno0/prefill" target="_blank">시승예약</a>
+      <a class="btn full" href="https://blog.naver.com/jump01223" target="_blank">블로그 보기</a>
+      <a class="btn full" href="lee-seunghyuk.vcf" download>연락처 저장</a>
     </div>
   </section>
 
-  <section class="sec">
-    <div class="label">SHOWROOM LOCATION</div>
-    <div class="loc">📍 <b>BYD Auto bundang Showroom</b><br>경기 성남시 분당구 대왕판교로 322 1층</div>
+  <section class="section">
+    <div class="label">LOCATION</div>
+    <h2>분당전시장 오시는 길</h2>
+    <div class="info">📍 BYD Auto bundang Showroom<br>경기 성남시 분당구 대왕판교로 322 1층</div>
     <div class="mapbtns">
       <a class="t" href="https://apis.openapi.sk.com/tmap/app/routes?name=BYD%20Auto%20bundang%20Showroom" target="_blank">T<br>티맵</a>
       <a class="k" href="https://map.kakao.com/link/search/경기 성남시 분당구 대왕판교로 322" target="_blank">K<br>카카오맵</a>
@@ -177,34 +206,27 @@ h1{margin:0;font-size:32px;letter-spacing:-1px}.role{color:var(--muted);font-siz
     </div>
   </section>
 
-  <div class="foot">BYD · DT NETWORKS · BUNDANG</div>
-</div>
+  <div class="footer">BYD · DT NETWORKS · BUNDANG</div>
+</main>
 
 <div class="fixed">
   <div class="fixed-in">
     <a href="tel:01023358798">전화</a>
-    <a href="sms:01023358798">문자</a>
-    <a href="https://open.kakao.com/o/sdjLeNbi" target="_blank">카톡</a>
+    <a href="https://docs.google.com/forms/d/1tkplfv9SKycjOyrhRzJjpQDBMR1903T1Z_dx6pgyno0/prefill" target="_blank">시승</a>
+    <a href="sms:01023358798?body=BYD 견적 상담 문의드립니다.">견적</a>
   </div>
 </div>
 
 <script>
-const cars=[
-  {name:"SEALION 6",img:"sealion6.png",desc:"전기 주행과 장거리 효율을 함께 갖춘 PHEV SUV"},
-  {name:"SEALION 7",img:"sealion7.png",desc:"패밀리 SUV 공간감과 전기차 퍼포먼스를 함께 갖춘 모델"},
-  {name:"SEAL",img:"seal.png",desc:"세련된 디자인과 강한 주행감을 갖춘 전기 세단"},
-  {name:"ATTO 3",img:"atto3.png",desc:"실속 있는 전기 SUV, 첫 전기차로 추천드리는 모델"},
-  {name:"DOLPHIN",img:"dolphin.png",desc:"도심 주행에 부담 없는 컴팩트 전기차"}
-];
-let current=0, years=5;
-const img=document.getElementById("mainCarImg"), nameEl=document.getElementById("mainCarName"), desc=document.getElementById("mainCarDesc"), dots=document.getElementById("dots");
-function renderDots(){dots.innerHTML=cars.map((_,i)=>`<span class="dot ${i===current?'active':''}"></span>`).join("")}
-function selectCar(i){current=i;img.src=cars[i].img;img.alt="BYD "+cars[i].name;nameEl.textContent=cars[i].name;desc.textContent=cars[i].desc;renderDots()}
-renderDots(); setInterval(()=>selectCar((current+1)%cars.length),3500);
-function setYear(y){years=y;document.querySelectorAll('.period button').forEach(b=>b.classList.remove('active'));event.target.classList.add('active')}
 function calc(){
-  let eff=+document.getElementById('eff').value||12, fuel=+document.getElementById('fuel').value||1650, km=+document.getElementById('km').value||20000;
-  let gas=km/eff*fuel, ev=km*75, tax=160000, save=(gas-ev+tax)*years;
+  const eff=+document.getElementById('eff').value||12;
+  const fuel=+document.getElementById('fuel').value||1650;
+  const km=+document.getElementById('km').value||20000;
+  const years=+document.getElementById('years').value||5;
+  const gas=km/eff*fuel;
+  const ev=km*75;
+  const tax=160000;
+  const save=(gas-ev+tax)*years;
   document.getElementById('result').innerHTML=years+'년 예상 절감액<br><b style="font-size:30px">약 '+Math.round(save).toLocaleString()+'원</b>';
 }
 </script>
